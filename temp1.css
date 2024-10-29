@@ -1,0 +1,71 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Soft background color */
+}
+
+.container {
+    max-width: 800px; /* Good width for reading */
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px; /* Rounded corners for modern look */
+}
+
+header h1 {
+    color: #2a3eb1; /* Engaging color */
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    background-color: #2a3eb1;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease;
+}
+
+.accordion:hover, .accordion.active {
+    background-color: #1e2a88; /* Slightly darker on hover */
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out, padding 0.3s ease-out;
+    opacity: 0;
+}
+
+.panel p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    padding: 10px 0;
+}
+
+a {
+    color: #1e88e5; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
